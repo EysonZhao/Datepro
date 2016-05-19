@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <string-array name="hobby">  
+        <item>嫩草绿</item>  
+        <item>天空蓝</item>  
+        <item>清纯粉</item>
+        <item>流年黄</item>  
+    </string-array>  
+</resources>

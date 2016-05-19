@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g3"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/event_new"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="@drawable/newd"
+        android:onClick="new_button"
+        android:text="新建备忘"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/event_sort"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/sort"
+        android:onClick="event_sort_show"
+        android:text="历史排序"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/event_exit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/event_sort"
+        android:background="@drawable/exit2"
+        android:onClick="exit_button"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/event_option"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/event_exit"
+        android:layout_alignLeft="@+id/event_new"
+        android:background="@drawable/option2"
+        android:onClick="option_click"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/main_importance_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_content_show"
+        android:layout_centerVertical="true" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/event_exit"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:editable="false"
+        android:ems="10"
+        android:hint="滑动切换，长按新建"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/event_recent"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/recent"
+        android:onClick="event_recent_show"
+        android:text="快速浏览"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/main_time_show"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:background="@null"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="无记录"
+        android:textSize="19dp" >
+
+        <requestFocus />
+    </EditText>
+	<EditText 
+	    android:id="@+id/now_hint"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/main_time_show"
+	    android:hint="最近三天无待办事项"
+	    android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/event_new"
+        android:layout_below="@+id/event_new"
+        android:layout_marginTop="24dp"
+        android:text="离您最近的待办事项"
+        android:textColor="#ff0000"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/main_content_show"
+        android:layout_width="400dp"
+        android:layout_height="190dp"
+        android:layout_above="@+id/event_exit"
+        android:layout_alignLeft="@+id/main_time_show"
+        android:layout_marginBottom="15dp"
+        android:background="@null"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="您尚未创建任何记事"
+        android:onClick="main_text_click"
+        android:textSize="19dp" />
+
+</RelativeLayout>

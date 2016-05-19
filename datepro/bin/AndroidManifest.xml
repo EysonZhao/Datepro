@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.datepro"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.datepro.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name="com.example.datepro.new_time"
+           ></activity>
+           <activity
+            android:name="com.example.datepro.new_content"
+           ></activity>
+           <activity
+            android:name="com.example.datepro.Event_display"
+           ></activity>
+           <activity
+            android:name="com.example.datepro.History_sort"
+           ></activity>
+           <activity
+            android:name="com.example.datepro.Event_show"
+           ></activity>
+           <activity
+            android:name="com.example.datepro.Notify_time"
+           ></activity>
+           <activity
+            android:name="com.example.datepro.Notify_content"
+           ></activity>
+           <activity
+            android:name="com.example.datepro.Options"
+           ></activity>
+    </application>
+
+</manifest>

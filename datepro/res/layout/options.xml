@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/g1"
+    >
+ <ListView
+    android:id="@+id/optionlist"
+    android:divider="#08f"
+    android:dividerHeight="2dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+/>   
+    
+</LinearLayout>
